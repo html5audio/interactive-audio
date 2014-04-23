@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Sound Example</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />    
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />    
+	<link href="css/styles.css" rel="Stylesheet" />
+
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/shake.js"></script>
+	<script type="text/javascript" src="js/func_audio_play-stop.js"></script>
+	<script type="text/javascript" src="js/func_audio_pistol.js"></script>
+	<script type="text/javascript" src="js/func_audio_shotgun.js"></script>
+	<script type="text/javascript" src="js/webaudio.js"></script>
+	<script type="text/javascript" src="js/base64-binary.js"></script>
+	<script type="text/javascript" src="js/defs_audio_data.js"></script>
+</head>
+
+<body>
+<h2>Simple playback with start/stop</h2>
+<div id="audioPlayer">
+	<p id="audioPlayer_play">Play</p>
+	<p id="audioPlayer_stop" style="display:none;">Stop</p>
+</div>
+
+<hr />
+
+<h2>User interface sound triggers</h2>
+<ul id="MyList">
+	<li class="listItem">Gloves <img src="images/checkmark.png" height="20" width="20" hidden /></li>
+	<li class="listItem">Helmet <img src="images/checkmark.png" height="20" width="20" hidden /></li>
+	<li class="listItem">Chaps <img src="images/checkmark.png" height="20" width="20" hidden /></li>
+	<li class="listItem">Keys <img src="images/checkmark.png" height="20" width="20" hidden /></li>
+	<li class="listItem">Jacket <img src="images/checkmark.png" height="20" width="20" hidden /></li>
+</ul>
+
+<hr />
+
+<input id="randomizeSound" name="randomSound" value="false" type="checkbox" /> Randomize sounds? (z)
+<input id="randomizePitch" name="randomPitch" value="false" type="checkbox" /> Randomize pitch? (x)
+
+<h2>Pistol Fire</h2>
+<h4>Press spacebar to fire the pistol</h4>
+<p id="pistol">Bang!</p>
+
+<h2>Shotgun Fire</h2>
+<h4>Press q to fire the shotgun</h4>
+<p id="shotgun">Bang!</p>
+
+<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>
