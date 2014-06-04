@@ -10,7 +10,7 @@ function Sound(source, level) {
 	that.buffer = null;
 	that.isLoaded = false;
 	that.panner = audioContext.createPanner();
-	that.volume = audioContext.createGainNode();
+	that.volume = audioContext.createGain();
 	if (!level) {
 		that.volume.gain.value = 1;
 	}
